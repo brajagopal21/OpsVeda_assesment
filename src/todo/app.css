@@ -1,0 +1,40 @@
+.yellow {
+	color: yellow;
+}
+
+.magenta {
+	color: magenta;
+}
+
+.green {
+	color: green;
+}
+
+/* Fade-in animation */
+@keyframes fadeToBlack {
+	0% {
+		color: red;
+	}
+	100% {
+		color: black;
+	}
+}
+
+/* Gradually fade to black over 15 seconds */
+.new-todo {
+	animation: fadeToBlack 15s forwards;
+}
+
+@keyframes fadeOut {
+	0% {
+		color: red;
+	} /* Start color */
+	100% {
+		color: black;
+	} /* End color */
+}
+
+/* Apply the fade-out animation to items with the fadeOut class */
+.fadeOut {
+	animation: fadeOut 1s linear forwards;
+}
